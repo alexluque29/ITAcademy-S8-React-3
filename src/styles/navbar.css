@@ -1,0 +1,20 @@
+.nav-main {
+    display: flex;
+    justify-content: center;
+    color: #9d9d9d;
+    border-top : solid 0.5px;
+    border-bottom : solid 0.5px;
+    border-color: #9d9d9d;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+}
+
+.nav-home {
+    margin-right: 10px;
+    
+}
+
+.nav-star {   
+    margin-left: 10px;
+}
