@@ -4,17 +4,39 @@
     color: #9d9d9d;
     border-top : solid 0.5px;
     border-bottom : solid 0.5px;
-    border-color: #9d9d9d;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-bottom: 50px;
+    border-color: #9d9d9d;  
+    margin-bottom: 20px;
 }
 
 .nav-home {
     margin-right: 10px;
-    
+    border-right: solid 0.5px;
+    border-left: solid 0.5px;
+    border-color: #9d9d9d;
+    padding: 10px;
+    text-decoration: none;  
 }
-
+.nav-starships {
+    margin-right: 10px;
+    border-right: solid 0.5px;
+    border-color: #9d9d9d;    
+    padding: 10px;   
+    text-decoration: none;  
+}
 .nav-star {   
     margin-left: 10px;
+}
+
+.cont-logo {
+    display: flex;
+    justify-content: center;
+   }
+
+.logo {    
+    width: 300px ;
+    margin-bottom: 20px;
+}
+.active {
+    font-size: bold;
+    color: white;
 }

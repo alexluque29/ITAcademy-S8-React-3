@@ -1,13 +1,18 @@
+import { Navigate, Route, Routes } from "react-router-dom";
+import { Navbar, Section, Home} from "./components";
+import Naves from './components/Naves';
+import "../src/styles/app.css";
 
-import {Header, Navbar, Section} from './components';
-import '../src/styles/app.css';
-
-export function App() {
+export const App = () => {
   return (
     <>
-    <Header />
-    <Navbar />
-    <Section />
-    </> 
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="section" element={<Section />} />
+          <Route path="naves/:id" element={<Naves />} />
+          <Route path="/*" element={<Navigate to="/" />} />
+        </Routes>
+    </>
   );
-}
+};

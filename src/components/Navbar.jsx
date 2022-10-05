@@ -1,12 +1,17 @@
+import "../styles/navbar.css";
+import swlogo from "../images/swlogo.jpg";
+import {NavLink} from 'react-router-dom';
 
-import '../styles/navbar.css';
 
 export const Navbar = () => {
   return (
     <>
+      <div className="cont-logo">
+        <img className="logo" src={swlogo} alt="logo" />
+      </div>
       <div className="nav-main">
-        <div className="nav-home">HOME</div>
-        <div className="nav-star">STARSHIPS</div>
+        <NavLink to="/" className="nav-home" activeclassname='active'>HOME</NavLink>
+        <NavLink to="/section" className="nav-starships" activeclassname='active'>STARSHIPS</NavLink>
       </div>
     </>
   );

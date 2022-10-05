@@ -1,0 +1,40 @@
+html,
+body {
+  color: #c9c9c9;
+  font-size:large;
+}
+.nombreNave {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 15% 30px 30%;
+  font-size: x-large;
+  font-weight: bold;
+}
+.fichasNaves {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 15% 50px 30%;
+  height: 130px;
+}
+.fichasIzq {
+  display: flex;
+  flex-direction: column;
+  margin-right: 300px;
+  justify-content: space-between;
+}
+.fichasDer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.nave-text {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 25% 50px 30%;
+}
+.imagenNave {
+  display: flex;
+  margin: 50px 15% 30px 30%;
+  border-bottom: solid 1px;
+  border-color: rgb(255, 168, 204);
+}

@@ -4,11 +4,23 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   height: 70px;
   margin: 15px 20% 15px 20%;
 }
 
 .naves-name {
   font-weight: bold;
+  color: #9d9d9d;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+.naves-model {
+  color: #9d9d9d;
+  text-decoration: none;
+  margin-left: 20px;
+}
+a{
+  text-decoration: none;
 }
