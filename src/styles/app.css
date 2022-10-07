@@ -6,6 +6,12 @@ body {
   /* background-image: url('../images/starsbg.jpg'); */
   font-family: "Open Sans Condensed", sans-serif;
 }
+
+#root{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .container {
   display: flex;
   justify-content: space-around;

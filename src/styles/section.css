@@ -8,7 +8,6 @@
   height: 70px;
   margin: 15px 20% 15px 20%;
 }
-
 .naves-name {
   font-weight: bold;
   color: #9d9d9d;
@@ -21,6 +20,25 @@
   text-decoration: none;
   margin-left: 20px;
 }
-a{
+a {
   text-decoration: none;
+}
+.button {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 80px;
+}
+.button-next {
+  background-color: #0f0f0f;
+  color: #9d9d9d;
+  width: 150px;
+  height: 40px;
+  border: solid 1px;
+  border-color: aliceblue;
+  border-radius: 7px;
+}
+.button-next:hover {
+  color: white;
+  font-weight: bolder;
 }

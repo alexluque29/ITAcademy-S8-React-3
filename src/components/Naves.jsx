@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { Text } from "../components/Text";
+import { Text } from "../components";
 import axios from "axios";
 import "../styles/swColor.css";
 import "../styles/naves.css";
