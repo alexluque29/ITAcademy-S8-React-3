@@ -8,12 +8,10 @@ const customStyles = {
     left: "50%",
     right: "auto",
     bottom: "auto",
-    marginRight: "-50%",
+    marginRight: "-40%",
     transform: "translate(-50%, -50%)",
   },
 };
-
-Modal.setAppElement("#root");
 
 export const LoginModal = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -56,6 +54,7 @@ export const LoginModal = () => {
     <Modal
       isOpen={isOpen}
       onRequestClose={onCloseModal}
+      ariaHideApp={false}
       style={customStyles}
       className="Modal"
       overlayClassName="modal-fondo"
@@ -63,31 +62,30 @@ export const LoginModal = () => {
     >
       <form onSubmit={onSubmit}>
         <div className="cont-login">
-          <div class="mb-3">
+          <div className="mb-3">
             <h3>ENTER YOUR EMAIL ADRESS</h3>
             <input
               type="email"
               name="email"
-              className="email"
-              class="form-control"
+              className="email form-control"
               placeholder="Email Adress"
               onChange={onInputChange}
             />
           </div>
-          <div class="mb-3">
-            <label for="password" class="form-label">
+          <div className="mb-3">
+            <label htmlFor="password" className="form-label">
               Enter Your Password
             </label>
             <input
               type="password"
               name="pass"
-              class="form-control"
+              className="form-control"
               id="password"
               placeholder="Password"
               onChange={onInputChange}
             />
           </div>
-          <button type="submit" class="btn btn-secondary p-0">
+          <button type="submit" className="btn btn-secondary p-0">
             Log in
           </button>
         </div>

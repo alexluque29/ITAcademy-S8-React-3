@@ -2,16 +2,15 @@
 
 html,
 body {
-  background-color: black;
-  /* background-image: url('../images/starsbg.jpg'); */
+  background-image: url('../images/swbg.jpg');
   font-family: "Open Sans Condensed", sans-serif;
 }
 
-#root{
+/* #root{
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 .container {
   display: flex;
   justify-content: space-around;

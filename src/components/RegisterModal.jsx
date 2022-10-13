@@ -8,12 +8,12 @@ const customStyles = {
     left: "50%",
     right: "auto",
     bottom: "auto",
-    marginRight: "-50%",
+    marginRight: "-40%",
     transform: "translate(-50%, -50%)",
   },
 };
 
-Modal.setAppElement("#root");
+// Modal.setAppElement("#root");
 
 export const RegisterModal = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -59,6 +59,7 @@ export const RegisterModal = () => {
     <Modal
       isOpen={isOpen}
       onRequestClose={onCloseModal}
+      ariaHideApp={false}
       style={customStyles}
       className="Modal"
       overlayClassName="modal-fondo"

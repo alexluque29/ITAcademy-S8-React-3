@@ -28,6 +28,7 @@ a {
   align-items: flex-start;
   justify-content: center;
   height: 80px;
+  gap: 20px;
 }
 .button-next {
   background-color: #0f0f0f;

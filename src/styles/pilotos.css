@@ -1,0 +1,27 @@
+.piloto-card {
+  background-color: #282727;
+  border-radius: 10px;
+}
+.piloto-image {
+  border-bottom: solid 2px #7c434f;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.piloto-name {
+  font-size: large;
+  font-weight: bold;
+  margin: 10px 0 0 10px;
+  color: white;
+}
+.piloto-text {
+  max-width: 400px;
+  padding: 0 10px 10px 10px;
+  color: #c7c6c6;
+}
+.data {
+  padding: 0 10px 10px 10px;
+  color: #7c434f;
+}
+.piloto-bg{
+  background-color: #282727;  
+}

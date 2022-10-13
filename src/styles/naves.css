@@ -1,7 +1,7 @@
 html,
 body {
   color: #c9c9c9;
-  font-size:large;
+  font-size: large;
 }
 .nombreNave {
   display: flex;
@@ -36,5 +36,25 @@ body {
   display: flex;
   margin: 50px 15% 30px 30%;
   border-bottom: solid 1px;
-  border-color: rgb(255, 168, 204);
+  border-color: #7c434f;
+}
+.pilots-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 40px;
+}
+.films-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 40px;
+}
+h2 {
+  color: #ebd800;
+  margin: 10px 0 40px 0;
+}
+.data-container {
+  display: flex;
+  justify-content: center;
 }

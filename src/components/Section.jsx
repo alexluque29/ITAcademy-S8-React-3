@@ -19,6 +19,9 @@ export const Section = () => {
   function nextTen() {
     setPageId((prevPageId) => prevPageId + 1);
   }
+  function prevTen() {
+    pageId >= 1 ? setPageId((prevPageId) => prevPageId - 1) : setPageId(pageId);
+  }
 
   const mapeaNaves = naves.map((item, i) => {
     let url = item.url.split("/");
@@ -37,8 +40,11 @@ export const Section = () => {
   return (
     <>
       <div>{mapeaNaves}</div>;
-      <div class="button">
-        <button class="button" className="button-next" onClick={nextTen}>
+      <div className="button">
+        <button aria-hidden="true" className="button-next" onClick={prevTen}>
+          SHOW LESS
+        </button>
+        <button aria-hidden="true" className="button-next" onClick={nextTen}>
           SHOW MORE
         </button>
       </div>

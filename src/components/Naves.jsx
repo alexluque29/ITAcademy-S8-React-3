@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { Text } from "../components";
+import { Text, Pilotos, Films } from "../components";
 import axios from "axios";
 import "../styles/swColor.css";
 import "../styles/naves.css";
@@ -8,8 +8,13 @@ import "../styles/naves.css";
 export default function NaveInfo() {
   const params = useParams();
 
-  const [imgNave, setImgNave] = useState(`https://starwars-visualguide.com/assets/img/starships/${params.id}.jpg`);
-  const imgError = () => setImgNave("https://starwars-visualguide.com/assets/img/big-placeholder.jpg");
+  const [imgNave, setImgNave] = useState(
+    `https://starwars-visualguide.com/assets/img/starships/${params.id}.jpg`
+  );
+  const imgError = () =>
+    setImgNave(
+      "https://starwars-visualguide.com/assets/img/big-placeholder.jpg"
+    );
 
   const [naveSelec, setNaveSelec] = useState(null);
 
@@ -42,7 +47,7 @@ export default function NaveInfo() {
               <div> Model: {naveSelec.model}</div>
               <div> Cost in credits: {naveSelec.cost_in_credits}</div>
               <div> Cargo capacity: {naveSelec.cargo_capacity}</div>
-              <div className="detalleNave">
+              <div>
                 {" "}
                 {`Atmospheric speed: ${naveSelec.max_atmosphering_speed} km/h.`}
               </div>
@@ -54,9 +59,27 @@ export default function NaveInfo() {
               <div> Passengers: {naveSelec.passengers}</div>
             </div>
           </div>
+          <div className="data-container">
+            <div className="pilots-container">
+              <h2>{naveSelec.name} Pilots</h2>
+              <div className="pilots" data-testid="pilots">
+                {naveSelec.pilots.map((url) => (
+                  <Pilotos key={url} url={url} />
+                ))}
+              </div>
+            </div>
+            <div className="films-container">
+              <h2>{naveSelec.name} Films</h2>
+              <div className="films">
+                {naveSelec.films.map((url) => (
+                  <Films key={url} url={url} />
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       ) : (
-        <h2 className="loading">Loading...</h2>
+        <h2 className="loading">Loading Starships...</h2>
       )}
     </>
   );

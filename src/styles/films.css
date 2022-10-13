@@ -1,0 +1,19 @@
+.piloto-card {
+  background-color: #8c8181;
+  border-radius: 10px;
+}
+.film-image {
+  border-bottom: solid 2px #7c434f;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.film-name {
+  font-size: large;
+  font-weight: bold;
+  margin: 10px 0 0 10px;
+  color: white;
+}
+.data {
+  padding: 0 10px 10px 10px;
+  color: #7c434f;
+}

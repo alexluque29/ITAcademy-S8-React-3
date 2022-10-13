@@ -13,7 +13,7 @@ export const App = () => {
           <Route path="register" element={<RegisterModal />} />
           <Route path="section" element={<Section />} />
           <Route path="naves/:id" element={<Naves />} />
-          <Route path="/*" element={<Navigate to="/" />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
     </>
   );

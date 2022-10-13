@@ -1,14 +1,24 @@
-
-.nav-main {
+.cont-nav{
     display: flex;
+    justify-content: space-around;
+    padding: 10px 0 10px 0 ;
+}
+.image{
+    width: 300px;
+    margin-left: 10px;
+}
+.enlaces{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.cont-barra{
+    display:flex;
     justify-content: center;
-    color: #9d9d9d;
     border-top : solid 0.5px;
     border-bottom : solid 0.5px;
-    border-color: #9d9d9d;  
-    margin-bottom: 20px;
+    border-color: #9d9d9d;
 }
-
 .nav-home {
     margin-right: 10px;
     border-right: solid 0.5px;
@@ -18,39 +28,9 @@
     text-decoration: none;  
 }
 .nav-starships {
-    margin-right: 40px;
+    margin-right: 80px;
     border-right: solid 0.5px;
     border-color: #9d9d9d;    
     padding: 10px;   
     text-decoration: none;  
-}
-.nav-star {   
-    margin-left: 10px;
-}
-.nav-link{
-    /* margin-right: 10px; */
-    padding: 10px;
-    text-decoration: none;
-}
-.cont{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.cont-logo {
-    justify-content: center;
-   }
-
-   .enlaces{
-    display: flex;
-   }
-
-.logo {        
-    width: 300px ;
-    margin-bottom: 20px;
-    margin-left: 100px;
-}
-.active {
-    font-size: bold;
-    color: white;
 }
